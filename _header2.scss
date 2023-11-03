@@ -1,0 +1,49 @@
+.header2 {
+    padding-top: 120px;
+    margin-top: -120px;
+    transform: skewY(-5deg);
+    background-color: $bg2;
+    .bash2 {
+        width: 100%;
+        
+        display: flex;
+        justify-content: space-around;
+        gap: 70px;
+        padding: 20px;
+        padding-bottom: 15%;
+        transform: skewY(5deg);
+
+        div {
+            width: 40%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            color: $col1;
+            justify-content: center;
+
+            h1 {
+                font-size: 50px;
+                position: relative;
+
+                &::before {
+                    width: 80px;
+                    height: 2px;
+                    background: $col1;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width:320px) {
+    .header2 {
+        flex-direction: column;
+
+        div {
+            width: 100%;
+        }
+    }
+}

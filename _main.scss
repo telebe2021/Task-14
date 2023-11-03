@@ -1,0 +1,88 @@
+main {
+    margin-top: -100px;
+    padding-top: 100px;
+    transform: skewY(-5deg);
+    background-color: $bg2;
+    .govde {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 11%;
+        transform: skewY(5deg);
+
+        .mh {
+            width: 40%;
+            text-align: center;
+            padding: 20px;
+            color: $col1;
+
+            h1 {
+                font-size: 50px;
+                position: relative;
+
+                &::before {
+                    width: 80px;
+                    height: 2px;
+                    background: $col1;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: calc((100% - 80px) / 2);
+                }
+            }
+        }
+
+        .mh2 {
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 10px;
+
+            div {
+                background-color: white;
+
+                h4 {
+                    font-size: 24px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width:320px) {
+    main {
+        padding-bottom: 15%;
+        clip-path: polygon(0 0, 100% 0%, 100% 98%, 0% 100%);
+
+        .mh {
+            width: 100%;
+        }
+
+        .mh2 {
+            width: 100%;
+            grid-template-columns: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width:768px) {
+    main {
+        padding-bottom: 15%;
+
+        .mh {
+            width: 100%;
+        }
+
+        .mh2 {
+            width: 80%;
+            grid-template-columns: auto auto;
+        }
+    }
+}

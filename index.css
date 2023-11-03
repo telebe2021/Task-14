@@ -1,0 +1,546 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header1 {
+  margin-top: -150px;
+  width: 100%;
+  height: 1000px;
+  padding-top: 150px;
+  background: url("https://preview.colorlib.com/theme/gourmet/img/hero_1.jpg") center/cover no-repeat;
+  transform: skewY(-5deg);
+}
+.header1 .bash {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  padding-bottom: 15%;
+  transform: skewY(5deg);
+}
+.header1 .bash nav {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.header1 .bash nav .gourmet {
+  width: 25%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: larger;
+}
+.header1 .bash nav .nar {
+  width: 50%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.header1 .bash nav a {
+  text-decoration: none;
+  color: orange;
+}
+.header1 .bash nav a:hover {
+  color: green;
+}
+.header1 .bash nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.header1 .bash nav .icon {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+.header1 .bash nav .icon i {
+  font-size: 40px;
+}
+.header1 .bash .eat {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  height: 300px;
+  color: #0f0e0e;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header1 .bash .eat a {
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #eeeeee;
+  color: #eeeeee;
+}
+.header1 .bash .eat a:hover {
+  color: #0f0e0e;
+  background-color: #eeeeee;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  header .bahs nav {
+    background-color: #0f0e0e;
+    align-items: center;
+  }
+  header .bahs nav .nar {
+    display: none;
+  }
+  header .bahs nav .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.header2 {
+  padding-top: 120px;
+  margin-top: -120px;
+  transform: skewY(-5deg);
+  background-color: #124954;
+}
+.header2 .bash2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+  padding: 20px;
+  padding-bottom: 15%;
+  transform: skewY(5deg);
+}
+.header2 .bash2 div {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  color: #046dff;
+  justify-content: center;
+}
+.header2 .bash2 div h1 {
+  font-size: 50px;
+  position: relative;
+}
+.header2 .bash2 div h1::before {
+  width: 80px;
+  height: 2px;
+  background: #046dff;
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 320px) {
+  .header2 {
+    flex-direction: column;
+  }
+  .header2 div {
+    width: 100%;
+  }
+}
+.section1 {
+  margin-top: -150px;
+  padding-top: 150px;
+  transform: skewY(-5deg);
+  background-color: #9a468b;
+}
+.section1 .orta {
+  width: 100%;
+  padding-bottom: 11%;
+  transform: skewY(5deg);
+}
+.section1 .orta .sec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .orta .sec .secad {
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  color: #eeeeee;
+}
+.section1 .orta .sec .secad h1 {
+  font-size: 50px;
+  position: relative;
+}
+.section1 .orta .sec .secad h1::before {
+  width: 80px;
+  height: 2px;
+  background: #eeeeee;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc((100% - 80px) / 2);
+}
+.section1 .orta .sec .sekiller {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.section1 .orta .sec .sekiller img {
+  width: 20%;
+  height: auto;
+}
+.section1 .orta .batr {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .orta .batr .hash {
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  color: #eeeeee;
+}
+.section1 .orta .batr .hash h1 {
+  font-size: 50px;
+  position: relative;
+}
+.section1 .orta .batr .hash h1::before {
+  width: 80px;
+  height: 2px;
+  background: #eeeeee;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc((100% - 80px) / 2);
+}
+.section1 .orta .batr .qiymet {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.section1 .orta .batr .qiymet a {
+  width: 30%;
+}
+.section1 .orta .batr .qiymet a img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+.section1 .orta .batr .qiymet a:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1023px) and (min-width: 320px) {
+  section {
+    padding-bottom: 15%;
+  }
+  section .sec .secad {
+    width: 100%;
+  }
+  section .sec .sekiller {
+    flex-direction: column;
+  }
+  section .sec .sekiller img {
+    width: 90%;
+  }
+  section .patr .hash {
+    width: 100%;
+  }
+  section .patr .qiymet {
+    flex-direction: column;
+  }
+  section .patr .qiymet a {
+    width: 90%;
+  }
+}
+main {
+  margin-top: -100px;
+  padding-top: 100px;
+  transform: skewY(-5deg);
+  background-color: #124954;
+}
+main .govde {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 11%;
+  transform: skewY(5deg);
+}
+main .govde .mh {
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  color: #046dff;
+}
+main .govde .mh h1 {
+  font-size: 50px;
+  position: relative;
+}
+main .govde .mh h1::before {
+  width: 80px;
+  height: 2px;
+  background: #046dff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc((100% - 80px) / 2);
+}
+main .govde .mh2 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+}
+main .govde .mh2 div {
+  background-color: white;
+}
+main .govde .mh2 div h4 {
+  font-size: 24px;
+}
+main .govde .mh2 div img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  main {
+    padding-bottom: 15%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 98%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 98%, 0% 100%);
+  }
+  main .mh {
+    width: 100%;
+  }
+  main .mh2 {
+    width: 100%;
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  main {
+    padding-bottom: 15%;
+  }
+  main .mh {
+    width: 100%;
+  }
+  main .mh2 {
+    width: 80%;
+    grid-template-columns: auto auto;
+  }
+}
+.figure {
+  margin-top: -110px;
+  padding-top: 110px;
+  transform: skewY(-5deg);
+  background-color: #9a468b;
+}
+.figure .govde2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 100px;
+  padding-bottom: 15%;
+  transform: skewY(5deg);
+}
+.figure .govde2 .lore {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  color: #eeeeee;
+  justify-content: center;
+}
+.figure .govde2 .lore h1 {
+  font-size: 50px;
+  position: relative;
+}
+.figure .govde2 .lore h1::before {
+  width: 80px;
+  height: 2px;
+  background: #eeeeee;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc((100% - 80px) / 2);
+}
+.figure .govde2 .more {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.figure .govde2 .more p {
+  font-size: 20px;
+}
+.figure .govde2 .more img {
+  width: 150px;
+  height: 150px;
+  border-radius: 999999px;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 320px) {
+  figure .lore {
+    width: 100%;
+    text-align: center;
+  }
+  figure .more {
+    width: 100%;
+    gap: 10px;
+  }
+  figure .more p {
+    font-size: 16px;
+  }
+}
+.ted {
+  margin-top: -110px;
+  transform: skewY(-3deg);
+  background-color: #124954;
+}
+.ted .govde3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding-bottom: 50px;
+  transform: skewY(3deg);
+}
+.ted .govde3 .teda {
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  color: #046dff;
+}
+.ted .govde3 .teda h1 {
+  font-size: 50px;
+  position: relative;
+}
+.ted .govde3 .teda h1::before {
+  width: 80px;
+  height: 2px;
+  background: #046dff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc((100% - 80px) / 2);
+}
+.ted .govde3 .tedb {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.ted .govde3 .tedb div {
+  width: 100%;
+  height: 400px;
+  background-color: #eeeeee;
+}
+.ted .govde3 .tedb div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.ted .govde3 .tedb div h2 {
+  font-size: 20px;
+  color: #046dff;
+}
+.ted .govde3 .tedb div h6 {
+  font-size: 14px;
+}
+.ted .govde3 .tedb div p {
+  font-size: 16px;
+}
+.ted .govde3 .tedb div a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid #046dff;
+}
+.ted .govde3 .tedb div a:hover {
+  background-color: black;
+  color: #046dff;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .ted .teda {
+    width: 100%;
+  }
+  .ted .tedb {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+footer {
+  margin-top: -150px;
+  padding-top: 150px;
+  background-color: #eeeeee;
+}
+footer .ayaq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+footer .ayaq a {
+  text-decoration: none;
+  color: #046dff;
+}
+footer .ayaq .foot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+footer .ayaq .foot div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ayaq .foot div ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  color: #046dff;
+}
+footer .ayaq .footer11 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  footer .foot {
+    flex-direction: column;
+  }
+  footer .foot div {
+    width: 80%;
+  }
+  footer .footer11 {
+    width: 80%;
+  }
+}/*# sourceMappingURL=index.css.map */
